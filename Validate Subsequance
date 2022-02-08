@@ -1,0 +1,12 @@
+static func isValidSubsequence(_ array: [Int], _ sequence: [Int]) -> Bool {
+		var indexID = 0 
+		for value in array {
+			if indexID >= sequence.count {
+				break
+			}
+			if value == sequence[indexID] {
+				 indexID += 1
+			}
+		}
+		return indexID == sequence.count
+  }
